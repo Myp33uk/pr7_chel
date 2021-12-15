@@ -1,0 +1,71 @@
+﻿<Window x:Class="chel_pr5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:chel_pr5"
+        mc:Ignorable="d"
+        Title="Практическая работа №6" Height="350" Width="846">
+    <Grid Margin="-1,0,1,0">
+        <GroupBox Header="Ввод" HorizontalAlignment="Left" Height="132" Margin="19,33,0,0" VerticalAlignment="Top" Width="231">
+            <Grid Height="114">
+                <TextBox x:Name="Name" Margin="79,10,10,81" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text=""/>
+                <TextBox x:Name="OBbem" PreviewTextInput="PreviewTextBoxInput" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Margin="79,45,10,45"/>
+                <TextBox x:Name="Plotnost" PreviewTextInput="PreviewTextBoxInput" Margin="79,80,10,11" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5"/>
+                <Label Content="Название" HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top" Height="23" Grid.ColumnSpan="2"/>
+                <Label Content="Объем" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Center" Height="23"/>
+                <Label Content="Плотность" HorizontalAlignment="Left" Margin="1,80,0,0" VerticalAlignment="Top" Height="23" Grid.ColumnSpan="2"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="Создать" Margin="477,39,0,0" VerticalAlignment="Top" Height="20" Click="Create" HorizontalAlignment="Left" Width="100" />
+        <Button Content="О программе" Margin="479,283,0,0" VerticalAlignment="Top" Click="Info"  HorizontalAlignment="Left" Width="100" Height="20" />
+        <GroupBox Header="Вывод" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="216" Margin="255,33,0,0">
+            <Grid Height="112">
+                <TextBox x:Name="Name1" IsReadOnly = "True" HorizontalAlignment="Left" Height="23" Margin="79,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Text=""/>
+                <TextBox x:Name="OBbem1" IsReadOnly = "True" HorizontalAlignment="Left" Height="23" Margin="79,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Text="0" />
+                <TextBox x:Name="Plotnost1" IsReadOnly = "True" HorizontalAlignment="Left" Height="23" Margin="79,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Text="0" />
+                <Label Content="Название" HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top" Height="23"/>
+                <Label Content="Объем" HorizontalAlignment="Left" Margin="1,45,0,0" VerticalAlignment="Top" Height="23"/>
+                <Label Content="Плотность" HorizontalAlignment="Left" Margin="1,80,0,0" VerticalAlignment="Top" Height="23"/>
+            </Grid>
+        </GroupBox>
+        <Label Content="Введите данные о жидкости" HorizontalAlignment="Left" Margin="34,4,0,0" VerticalAlignment="Top" Height="29" Width="165"/>
+        <GroupBox Header="Ввод" HorizontalAlignment="Left" Height="132" Margin="19,178,0,0" VerticalAlignment="Top" Width="231">
+            <Grid Height="114">
+                <TextBox x:Name="Name2" Margin="79,10,10,81" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Text=""/>
+                <TextBox x:Name="OBbem2" PreviewTextInput="PreviewTextBoxInput" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" Margin="79,45,10,45"/>
+                <TextBox x:Name="Plotnost2" PreviewTextInput="PreviewTextBoxInput" Margin="79,80,10,11" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5"/>
+                <Label Content="Название" HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top" Height="23" Grid.ColumnSpan="2"/>
+                <Label Content="Объем" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Center" Height="23"/>
+                <Label Content="Плотность" HorizontalAlignment="Left" Margin="1,80,0,0" VerticalAlignment="Top" Height="23" Grid.ColumnSpan="2"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="Создать" Margin="477,188,0,0" VerticalAlignment="Top" Height="20" Click="Creates" HorizontalAlignment="Left" Width="100" />
+        <Button Content="Выход" Margin="584,283,0,0" VerticalAlignment="Top" Click="Exit" HorizontalAlignment="Left" Width="100" Height="20" />
+        <GroupBox Header="Вывод" HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="216" Margin="255,178,0,0">
+            <Grid Height="112">
+                <TextBox x:Name="Name3" IsReadOnly = "True" HorizontalAlignment="Left" Height="23" Margin="79,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Text=""/>
+                <TextBox x:Name="OBbem3" IsReadOnly = "True" HorizontalAlignment="Left" Height="23" Margin="79,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Text="0" />
+                <TextBox x:Name="Plotnost3" IsReadOnly = "True" HorizontalAlignment="Left" Height="23" Margin="79,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Text="0" />
+                <Label Content="Название" HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top" Height="23"/>
+                <Label Content="Объем" HorizontalAlignment="Left" Margin="1,45,0,0" VerticalAlignment="Top" Height="23"/>
+                <Label Content="Плотность" HorizontalAlignment="Left" Margin="1,80,0,0" VerticalAlignment="Top" Height="23"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="Сравнить" Margin="478,65,0,0" VerticalAlignment="Top" Height="20" Click="Compare" HorizontalAlignment="Left" Width="100" />
+        <Button Content="Минус 1" Margin="478,213,0,0" VerticalAlignment="Top" Height="20" Click="Minuss" HorizontalAlignment="Left" Width="100" />
+        <Button Content="Минус 1" Margin="478,90,0,0" VerticalAlignment="Top" Height="20" Click="Minus" HorizontalAlignment="Left" Width="100" />
+        <TextBox x:Name="Raznost2" IsReadOnly = "True" HorizontalAlignment="Left" Height="20" Margin="478,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.5,0.5" />
+        <TextBox x:Name="Raznost1" IsReadOnly = "True" HorizontalAlignment="Left" Height="20" Margin="479,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.5,0.5" />
+        <Button Content="Плюс 1" Margin="583,90,0,0" VerticalAlignment="Top" Height="20" Click="Plus" HorizontalAlignment="Left" Width="100" />
+        <Button Content="Плюс 1" Margin="583,213,0,0" VerticalAlignment="Top" Height="20" Click="Pluss" HorizontalAlignment="Left" Width="100" />
+        <TextBox x:Name="Summa1" IsReadOnly = "True" HorizontalAlignment="Left" Height="20" Margin="583,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.5,0.5" />
+        <TextBox x:Name="Summa2" IsReadOnly = "True" HorizontalAlignment="Left" Height="20" Margin="584,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.5,0.5" />
+        <TextBox x:Name="Strengths" HorizontalAlignment="Left" Margin="701,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24" IsReadOnly="True"/>
+        <TextBox x:Name="Hop" HorizontalAlignment="Left" Margin="701,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24" IsReadOnly="True"/>
+        <RadioButton x:Name="JIGUL" Content="Жигулёвское" Margin="701,84,0,0" VerticalAlignment="Top" Height="20" HorizontalAlignment="Left" Width="100" Checked="Jigul" />
+        <RadioButton x:Name="GOLD" Content="Голд пиво" Margin="701,108,0,0" VerticalAlignment="Top" Height="20" HorizontalAlignment="Left" Width="100" Checked="Gold" />
+        <TextBox x:Name="Volume" HorizontalAlignment="Left" Margin="701,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24" IsReadOnly="True"/>
+        <TextBox x:Name="Density" HorizontalAlignment="Left" Margin="701,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24" IsReadOnly="True"/>
+    </Grid>
+</Window>
